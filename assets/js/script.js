@@ -7,3 +7,10 @@ buttonEl.addEventListener("click", function() {
     listItemEl.textContent = "This is a new task.";
     taskToDoEl.appendChild(listItemEl);
 });
+
+var createTaskHandler = function() {
+    var listItemEl = document.createElement("li");
+    listItemEl.className = "task-item";
+    listItemEl.textContent = "This is a new task.";
+    taskToDoEl.appendChild(listItemEl);
+}
