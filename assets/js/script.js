@@ -20,6 +20,9 @@ var taskFormHandler = function(event) {
         return false;
     }
 
+    // reset the form
+    formEl.reset();
+
     // send it as an argument to createTaskEl
     createTaskEl(taskDataObj);
 }
