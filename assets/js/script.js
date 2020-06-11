@@ -195,6 +195,7 @@ var taskStatusChangeHandler = function(event) {
 var dragTaskHandler = function(event) {
     var taskId = event.target.getAttribute("data-task-id");
     console.log("Task ID:", taskId);
+    console.log("event", event);
 } 
 
 pageContentEl.addEventListener("click", taskButtonHandler);
