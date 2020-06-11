@@ -197,7 +197,11 @@ var dragTaskHandler = function(event) {
     event.dataTransfer.setData("text/plain", taskId);
     var getId = event.dataTransfer.getData("text/plain");
     console.log("getId:", getId, typeof getId);
-} 
+}
+
+var dropZoneDragHandler = function(event) {
+    console.log("Dragover Event Target:", event.target);
+};
 
 pageContentEl.addEventListener("click", taskButtonHandler);
 pageContentEl.addEventListener("change", taskStatusChangeHandler);
