@@ -208,7 +208,9 @@ var dropZoneDragHandler = function(event) {
 
 var dropTaskHandler = function(event) {
     var id = event.dataTransfer.getData("text/plain");
-    console.log("Drop Event Target:", event.target, event.dataTransfer, id);
+    var draggableElement = document.querySelector("[data-task-id='" + id + "']");
+    console.log(draggableElement);
+    console.dir(draggableElement);
 };
 
 pageContentEl.addEventListener("click", taskButtonHandler);
