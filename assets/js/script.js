@@ -200,7 +200,10 @@ var dragTaskHandler = function(event) {
 }
 
 var dropZoneDragHandler = function(event) {
-    console.log("Dragover Event Target:", event.target);
+    var taskListEl = event.target.closest(".task-list");
+    if (taskListEl) {
+      event.preventDefault();
+    }
 };
 
 pageContentEl.addEventListener("click", taskButtonHandler);
