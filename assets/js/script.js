@@ -2,6 +2,7 @@ var taskIdCounter = 0;
 
 var formEl = document.querySelector("#task-form");
 var taskToDoEl = document.querySelector("#tasks-to-do");
+var pageContentEl = document.querySelector("#page-content");
 
 var taskFormHandler = function(event) {
 
@@ -104,3 +105,9 @@ formEl.addEventListener("submit", taskFormHandler); {
     // listItemEl.textContent = "This is a new task.";
     taskToDoEl.appendChild(listItemEl);
 };
+
+var taskButtonHandler = function(event) {
+    console.log(event.target);
+};    
+
+pageContentEl.addEventListener("click", taskButtonHandler);
