@@ -53,6 +53,9 @@ var createTaskEl = function(taskDataObj) {
     // add task id as a custom attribute
     listItemEl.setAttribute("data-task-id", taskIdCounter);
 
+    // make task draggable
+    listItemEl.setAttribute("draggable", true);
+
     // create div to hold task info and add to list item
     var taskInfoEl = document.createElement("div");
     // give it a class name
