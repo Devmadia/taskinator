@@ -227,6 +227,7 @@ var dropTaskHandler = function(event) {
       }
 
     dropZoneEl.appendChild(draggableElement);
+    dropZoneEl.removeAttribute("style");
 };
 
 pageContentEl.addEventListener("click", taskButtonHandler);
